@@ -3,8 +3,8 @@ import sys
 
 def database(data, query):
     # Start a sqlite3 connection
-    # con = sqlite3.connect(":memory:")
-    con = sqlite3.connect("flights.db")
+    con = sqlite3.connect(":memory:")
+    # con = sqlite3.connect("flights.db")
     cur = con.cursor()
 
     # Execute a query to create a table in the flights.db file
